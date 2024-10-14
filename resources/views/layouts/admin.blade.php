@@ -18,9 +18,12 @@
       <ul class="list-group list-group-flush">
         @if (Auth::user()->role == 'admin')
           <li class="list-group-item">Menu Admin</li>
+          @yield('content')
         @endif
         @if (Auth::user()->role == 'user')
           <li class="list-group-item">Menu User</li>
+          @yield('content')
+
         @endif
        
       </ul>

@@ -8,10 +8,10 @@ class adminController extends Controller
 {
     function index()
     {
-        return view('/admin');
+        return view('layouts/admin');
     }
     function user()
     {
-        return view('/admin');
+        return view('layouts/admin');
     }
 }
